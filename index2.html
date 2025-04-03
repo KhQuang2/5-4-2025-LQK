@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+           
+        }
+        label {
+            display: block;
+        
+        }
+        input, select, textarea {
+            
+        }
+        button {
+           
+            border: none;
+        }
+        button:hover {
+        }
+    </style>
+</head>
+<body>
+
+<h2>Form</h2>
+<form action="/submit" method="POST">
+    <label for="name">Tên:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="options">Bạn theo dõi Sơn Tùng bao lâu:</label>
+    <select id="options" name="options" required>
+        <option value="option1">Dưới 5 năm</option>
+        <option value="option2">5-10 năm</option>
+    </select>
+
+    <label for="message">Lời nhắn:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+<br>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
